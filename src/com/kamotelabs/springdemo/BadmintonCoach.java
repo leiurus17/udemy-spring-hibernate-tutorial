@@ -4,6 +4,9 @@ public class BadmintonCoach implements Coach {
 	
 	// define a private field for the dependency
 	private FortuneService fortuneService;
+
+	public BadmintonCoach() {
+	}
 	
 	// define a constructor for the dependency injection
 	private BadmintonCoach(FortuneService theFortuneService) {
@@ -17,8 +20,8 @@ public class BadmintonCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		// use my fortuneService to get a fortune
+		return fortuneService.getFortune();
 	}
 
 }
