@@ -6,6 +6,9 @@ public class BadmintonCoach implements Coach {
 	private FortuneService fortuneService;
 	
 	// define a constructor for the dependency injection
+	private BadmintonCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
 
 	@Override
 	public String getDailyWorkout() {
