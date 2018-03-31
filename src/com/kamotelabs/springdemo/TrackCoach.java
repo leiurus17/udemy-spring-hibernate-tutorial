@@ -21,7 +21,7 @@ public class TrackCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		// use my fortuneService to get a fortune
-		return fortuneService.getFortune();
+		return "Just do it: " + fortuneService.getFortune();
 	}
 
 }
