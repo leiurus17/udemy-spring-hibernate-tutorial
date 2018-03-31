@@ -7,4 +7,10 @@ public class BadmintonCoach implements Coach {
 		return "Smash for 30 minutes.";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
