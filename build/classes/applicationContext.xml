@@ -25,12 +25,7 @@
     	class="com.kamotelabs.springdemo.CricketCoach">
     	
     	<!-- set up setter injection -->
-    	<property name="fortuneService" ref="myFortuneService" />
+    	<property name="fortuneService" ref="myFortune" />
     </bean>
     
 </beans>
-
-
-
-
-
