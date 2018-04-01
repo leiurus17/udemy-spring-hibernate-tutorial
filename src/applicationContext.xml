@@ -21,9 +21,12 @@
     	<constructor-arg ref="myFortune" />
     </bean>
     
-    <!-- set up constructor injection -->
-    
-    
+    <bean id="myCricketCoach"
+    	class="com.kamotelabs.springdemo.CricketCoach">
+    	
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortuneService" />
+    </bean>
     
 </beans>
 
