@@ -16,11 +16,22 @@
     	class="com.kamotelabs.springdemo.HappyFortuneService">
     </bean>
     
+    <bean id="myRandomFortune"
+    	class="com.kamotelabs.springdemo.RandomFortuneService">
+    </bean>
+    
     <bean id="myCoach"
     	class="com.kamotelabs.springdemo.TrackCoach">
     	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />
+    </bean>
+    
+    <bean id="myRandomCoach"
+    	class="com.kamotelabs.springdemo.BasketballCoach">
+    	
+    	<!-- set up constructor injection -->
+    	<constructor-arg ref="myRandomFortune" />
     </bean>
     
     <bean id="myCricketCoach"
